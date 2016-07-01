@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var data = require('../lib/data');
+var functions = require('../lib/function')
 
 var app = express();
 
@@ -14,7 +15,7 @@ router.get('/users', function(req, res, next) {
 });
 
 router.get('/active_users', function(req, res, next) {
-  res.json(data);
+  res.json(functions.filterActive(data));
 });
 
 module.exports = router;

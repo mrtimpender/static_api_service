@@ -25,10 +25,10 @@ function populateDOM(array){
     var cell3 = row.insertCell(3);
     var cell4 = row.insertCell(4);
 
-    cell0.innerHTML = array[i].user_data.first_name;
-    cell1.innerHTML = array[i].user_data.last_name
-    cell2.innerHTML = array[i].user_data.id
-    cell3.innerHTML = array[i].user_data.active
-    cell4.innerHTML = array[i].user_data.y_code
+    cell0.innerHTML = "<a href='#'>" + array[i].user_data.first_name + "</a>"
+    cell1.innerHTML = "<a href='#'>" + array[i].user_data.last_name + "</a>"
+    cell2.innerHTML = "<a href='#'>" + array[i].user_data.id + "</a>"
+    cell3.innerHTML = "<a href='#'>" + array[i].user_data.active + "</a>"
+    cell4.innerHTML = "<a href='#'>" + array[i].user_data.y_code + "</a>"
   }
 };
