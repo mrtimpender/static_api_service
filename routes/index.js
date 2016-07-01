@@ -13,5 +13,8 @@ router.get('/users', function(req, res, next) {
   res.json(data);
 });
 
+router.get('/active_users', function(req, res, next) {
+  res.json(data);
+});
 
 module.exports = router;

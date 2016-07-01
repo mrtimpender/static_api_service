@@ -1,5 +1,7 @@
+// VARIABLES
 var table = document.getElementById('userTable');
 
+// API CALLS
 httpRequest = new XMLHttpRequest();
 
 httpRequest.onreadystatechange = function(){
@@ -13,6 +15,7 @@ httpRequest.onreadystatechange = function(){
 httpRequest.open('GET', 'http://localhost:3000/users');
 httpRequest.send();
 
+// FUNCTIONS
 function populateDOM(array){
   for (var i=0; i<array.length; i++){
     var row = table.insertRow(i+1);
